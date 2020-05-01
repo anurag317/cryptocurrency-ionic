@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-grid>
+  <ion-row>
+    <ion-col col-2 *ngFor="let item of result">
+      <ion-card>
+        <ion-badge color="secondary">{{item.SortOrder}}</ion-badge>
+        <ion-card-content>
+          <ion-card-title>
+            {{item.FullName}}
+          </ion-card-title>
+          <p class="price">${{item.Price}}</p>
+        </ion-card-content>
+        <img class="card-img-top" src="{{baseImageUrl}}{{item.ImageUrl}}" alt="Coin image"/>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+<!-- <div class="row">
+  <div class="card col-sm-4" *ngFor="let item of result">
+    <div class="coin-container">
+      <span class="badge badge-pill badge-primary">{{item.SortOrder}}</span>
+      <img class="card-img-top" src="{{baseImageUrl}}{{item.ImageUrl}}" alt="Coin image">
+      <div class="card-body">
+        <h5 class="card-title">{{item.FullName}}</h5>
+        <p class="card-text">${{item.Price}}</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+</div> -->

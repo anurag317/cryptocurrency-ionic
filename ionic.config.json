@@ -1,0 +1,7 @@
+{
+  "name": "CryptoCurrency",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

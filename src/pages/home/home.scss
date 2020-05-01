@@ -1,0 +1,11 @@
+page-home {
+    overflow-y: auto;
+    .header {
+        position: relative;
+    }
+    .price {
+        font-size: 2em;
+        background-color: lavender;
+        text-align: center;
+    }
+}
